@@ -24,7 +24,7 @@ app.event("app_mention", async ({ event, say }) => {
     // Call The Assistants' API workflow that takes a prompt and returns a response
     // Note that "Assistant" is API Function Name we defined in MindStudio
     const { result: mindstudioResult, billingCost } =
-      await client.workers.Assistant.api({
+      await client.workers.Assistant1.api({
         prompt: event.text,
       });
 
